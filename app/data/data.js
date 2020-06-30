@@ -1,43 +1,42 @@
-export default [
+var quizQuestions = [
     {
-        question: 'What does CSS stand for?',
-        answers: ['Computer Style Sheets', 'Creative Style Sheets', 'Cascading Style Sheets', 'Colorful Style Sheets'],
-        correct: 3
+        question: "Which command defines the author email to be used for all commits by the current user.",
+        correct:"git config --global user.email <email>",
+        answerOptions: [
+            "git clean -f <path>","git config --global user.email <email>","git merge --no-ff <email>","git email--amend"
+        ],
+        
     },
+    {
+        question:"Which one of the following is not part of the data structure of a Git repository?",
+        correct:"Body element",
+answerOptions:["Body element","Branch pointer","Commit object","HEAD pointer"]
+    },
+    {
+    question:"Which Git command changes where the HEAD pointer points and modifies the contents of the working directory?",
+    answerOptions:["checkout","merge","mv","pull"],
+    correct:"checkout"
 
-    {
-        question: 'Where in an HTML document is the correct place to refer to an external style sheet?',
-        answers: ['In the <head> section', 'In the <body> section', 'At the end of the document', 'You can\'t refer to an external style sheet'],
-        correct: 1
-    },    
-    {
-        question: 'Which HTML tag is used to define an internal style sheet?',
-        answers: ['<style>', '<script>', '<headStyle>', '<css>'],
-        correct: 1
-    },    
-    {
-        question: 'Which HTML attribute is used to define inline styles?',
-        answers: ['class', 'style', 'font', 'styles'],
-        correct: 2
     },
     {
-        question: 'Which is the correct CSS syntax?',
-        answers: ['{body:color=black;}', '{body;color:black;}', 'body:color=black;', 'body {color: black;}'],
-        correct: 4
+        question: " ___________________ removes untracked files from your working directory.",
+        correct:"git clean",
+        answerOptions: [
+            "git commit","git clean -f <path>","git clean","git reset"
+        ],
+        
     },
+   { 
+        question:"Which file can you configure to ensure that certain file types are never committed to the local Git repository?",
+        correct:".gitignore",
+        answerOptions:["ignore.git",".gitignore","gitignore.txt","git.ignore"]
+        },
     {
-        question: 'How do you insert a comment in a CSS file?',
-        answers: ['\' this is a comment', '/* this is a comment */', '// this is a comment', '// this is a comment //'],
-        correct: 2
-    },
-    {
-        question: 'Which property is used to change the background color?',
-        answers: ['color', 'bgcolor', 'background-color', 'bgColor'],
-        correct: 3
-    },
-    {
-        question: 'How do you add a background color for all <h1> elements?',
-        answers: ['all.h1 {background-color:#FFFFFF;}', 'h1.setAll {background-color:#FFFFFF;}', 'h1.all {background-color:#FFFFFF;}', 'h1 {background-color:#FFFFFF;}'],
-        correct: 4
-    }
-]
+        question:"Which command should you use to initialize a new Git repository?",
+        correct:"git init",
+        answerOptions:["git bash","git install","git init","git start"  ],
+        }
+];
+  
+  export default quizQuestions;
+  
